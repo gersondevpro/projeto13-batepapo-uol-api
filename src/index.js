@@ -162,7 +162,7 @@ app.post("/status", async (req, res) => {
             $set: {lastStatus: Date.now()}
         }
 
-        return res,sendStatus(200)
+        return res.sendStatus(200)
     } catch (err) {
         return res.sendStatus(500)
     }
